@@ -41,17 +41,17 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    # Cloudinary apps
+    'cloudinary',
+    'cloudinary_storage',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'portfolio',
-    # Cloudinary apps
-    'cloudinary',
-    'cloudinary_storage',
-    
+    'portfolio',    
 ]
 
 # Seta Cloudinary como o backend de armazenamento padrão para arquivos de mídia
