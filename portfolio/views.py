@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 
 # Create your views here.
 def index(request):
-    projetos = Projeto.objects.all()
+    projetos = Projeto.objects.all().order_by('-data_criacao')
     return render(request, 'index.html', {'projetos': projetos} )
 
 def projeto_detalhes(request, pk):
